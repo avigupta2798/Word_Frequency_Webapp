@@ -5,6 +5,7 @@ of
 and
 a
 in
+am
 that
 have
 i
@@ -98,3 +99,5 @@ give
 day
 most
 us
+is
+are
