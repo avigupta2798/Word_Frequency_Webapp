@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block body_block %}
+<div class="container">
+  <div class="jumbotron">
+    <h1>Welcome to Across the Globe !</h1><br><br>
+    <div class="ui-widget">
+        <h2>Word Count</h2>
+        <form action= "/searchResults" method= "GET">
+            <input id="search" type="text" placeholder="Enter URL" name="term" size="100">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
