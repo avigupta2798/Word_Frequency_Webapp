@@ -4,6 +4,7 @@ from django import forms
 from frequencycount.models import WordCountUrl
 
 class WordCountUrlForm(forms.ModelForm):
-    class meta():
-        model =WordCountUrl
-        fields = ('url')
+    url = forms.CharField(widget=forms.URLInput)
+    class Meta:
+        model = WordCountUrl
+        fields = "__all__"

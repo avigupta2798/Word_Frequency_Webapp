@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from frequencycount.views import index, getSearchResults
+from frequencycount.views import index, getSearchResults, postSearchResults
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('frequency/', index, name='index'),
+    path('postsearchResults/', postSearchResults, name='postSearchResults'),
     path('searchResults/', getSearchResults, name='getSearchResults'), #path to search results
 ]
